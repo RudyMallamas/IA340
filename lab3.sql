@@ -31,13 +31,25 @@ values('s1@jmu.edu', 'c1'),
 	('s3@jmu.edu', 'c3');
 
 --q2.5
+--professor holds primary key, therefore you need to change professor first.
 
 insert into professor (p_email,p_name,office)
 values ('p3@jmu.edu','p3','o3');
+
 insert into course (c_number, c_name, room, p_email)
 values ('c4','facebook','r1', 'p3@jmu.edu');
 
---proffessor holds primary key
+--q2.6
+--Update the course first, so p1 can be deleted and replaced with p3
+update course
+set p_email = 'p3@jmu.edu'
+where p_email ='p1@jmu.edu';
+
+delete from professor
+where p_email ='p1@jmu.edu'
+
+
+
 
 
 	
