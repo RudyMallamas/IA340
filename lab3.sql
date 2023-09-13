@@ -2,9 +2,9 @@
 insert into student(s_email, s_name,major)
 
 	values('s1@jmu.edu', 's1', 'IA'),
-	values('s2@jmu.edu', 's2', 'IA'),
-	values('s3@jmu.edu', 's3', 'ISAT'),
-	values('s4@jmu.edu', 's4', 'ISAT')
+	('s2@jmu.edu', 's2', 'IA'),
+	('s3@jmu.edu', 's3', 'ISAT'),
+	('s4@jmu.edu', 's4', 'ISAT')
 
 --q2.2
 
@@ -32,12 +32,13 @@ values('s1@jmu.edu', 'c1'),
 
 --q2.5
 
-/*insert into professor (p_email,p_name,office)
+insert into professor (p_email,p_name,office)
 values ('p3@jmu.edu','p3','o3');
 insert into course (c_number, c_name, room, p_email)
 values ('c4','facebook','r1', 'p3@jmu.edu');
 
-proffessor holds primary key
-*/
+--proffessor holds primary key
+
+
 	
 
